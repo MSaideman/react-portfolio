@@ -5,6 +5,7 @@ import About from './components/pages/about';
 import Contact from './components/pages/contact';
 import Portfolio from './components/pages/portfolio';
 import PortfolioContainer from './components/portfoliocontainer'
+import Resume from './components/pages/resume';
 import React, {useState} from 'react';
 
 function App() {
@@ -21,7 +22,10 @@ const renderPage = () => {
   if (currentPage === 'Portfolio') {
     return <Portfolio/>;
   }
-  return <Contact />;
+  if (currentPage === 'Contact') {
+    return <Contact/>;
+  }
+  return <Resume />;
 };
 
 const handlePageChange = (page) => setCurrentPage(page);
