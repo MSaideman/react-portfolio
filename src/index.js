@@ -1,43 +1,13 @@
-import Header from './components/header';
-import Footer from './components/footer';
-import Home from './components/pages/home';
-import About from './components/pages/about';
-import Contact from './components/pages/contact';
-import Portfolio from './components/pages/portfolio';
-import PortfolioContainer from './components/portfoliocontainer'
-import Resume from './components/pages/resume';
-import React, {useState} from 'react';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
-const [currentPage, setCurrentPage] = useState('Home');
-
-const renderPage = () => {
-  if (currentPage === 'Home') {
-    return <Home />;
-  }
-  if (currentPage === 'About') {
-    return <About />;
-  }
-  if (currentPage === 'Portfolio') {
-    return <Portfolio/>;
-  }
-  if (currentPage === 'Contact') {
-    return <Contact/>;
-  }
-  return <Resume />;
-};
-
-const handlePageChange = (page) => setCurrentPage(page);
-
-
-  return <div>
-  <Header handlePageChange={handlePageChange} currentPage={currentPage}/>
-  <PortfolioContainer renderPage={renderPage} />
-  <Footer />
-
-  </div>
-
-
-}
-export default App;
