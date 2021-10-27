@@ -1,23 +1,53 @@
-import { Navbar, Container, Nav } from 'react-bootstrap';
-import React from 'react';
+// import { Navbar, Container, Nav } from 'react-bootstrap';
+import React from "react";
 
-export default function NavTabs() {
+function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div>
-      <Navbar bg="light" expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">Mackenzie Saideman</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <ul className="nav nav-pills">
+        <li className="nav-item">
+          <a
+            href="#home"
+            onClick={() => handlePageChange("Home")}
+            className={currentPage === "Home" ? "nav-link active" : "nav-link"}
+          >
+            Mackenzie Saideman
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#about"
+            onClick={() => handlePageChange("About")}
+            className={currentPage === "About" ? "nav-link active" : "nav-link"}
+          >
+            About me
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#portfolio"
+            onClick={() => handlePageChange("Portfolio")}
+            className={
+              currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+            }
+          >
+            Portfolio
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#contact"
+            onClick={() => handlePageChange("Contact")}
+            className={
+              currentPage === "Contact" ? "nav-link active" : "nav-link"
+            }
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
+
+export default NavTabs;

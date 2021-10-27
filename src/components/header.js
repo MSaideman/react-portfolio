@@ -1,13 +1,19 @@
 import React from "react";
-import NavTabs from './navtabs'
+import NavTabs from "./navtabs";
 
-export default function Header() {
-  return <div>
+function Header({currentPage, handlePageChange}) {
+  return (
     <div>
-    <NavTabs />
+      <div>
+        <nav >
+          <NavTabs
+            handlePageChange={handlePageChange}
+            currentPage={currentPage}
+          />
+        </nav>
+      </div>
     </div>
-    <div>
-      <h1>Welcome!</h1>
-    </div>
-  </div>;
+  );
 }
+
+export default Header;

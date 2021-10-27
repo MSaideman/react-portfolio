@@ -4,20 +4,36 @@ import Home from './components/pages/home';
 import About from './components/pages/about';
 import Contact from './components/pages/contact';
 import Portfolio from './components/pages/portfolio';
+import PortfolioContainer from './components/portfoliocontainer'
+import React, {useState} from 'react';
 
-class App {
-    render() {
-        return (
-            <div>
-                <Header/>
-                <Home />
-                <About />
-                <Portfolio />
-                <Contact />
-                <Footer />
-            </div>
-        )
-    }
+function App() {
+
+const [currentPage, setCurrentPage] = useState('Home');
+
+const renderPage = () => {
+  if (currentPage === 'Home') {
+    return <Home />;
+  }
+  if (currentPage === 'About') {
+    return <About />;
+  }
+  if (currentPage === 'Portfolio') {
+    return <Portfolio/>;
+  }
+  return <Contact />;
+};
+
+const handlePageChange = (page) => setCurrentPage(page);
+
+
+  return <div>
+  <Header handlePageChange={handlePageChange} currentPage={currentPage}/>
+  <PortfolioContainer renderPage={renderPage} />
+  <Footer />
+
+  </div>
+
+
 }
-
 export default App;
