@@ -1,10 +1,12 @@
 
-import React from 'react';
+import * as React from 'react';
 import Avatar from '../assets/avatar.png'
+import Container from '@mui/material/Container';
 
 export default function About() {
     return (
-      <section className="container">
+      <React.Fragment>
+      <Container fixed>
       <h2 class="top-title">Mackenzie Saideman</h2>
       <hr></hr>
       <div>
@@ -17,6 +19,7 @@ export default function About() {
           Skilled in data analysis, coordination of complex projects, process improvement in highly regulated industries, and development of E-commerce websites.
           </p>
       </div>
-  </section>
+  </Container>
+  </React.Fragment>
     );
   }

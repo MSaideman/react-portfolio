@@ -1,5 +1,9 @@
 // import { Navbar, Container, Nav } from 'react-bootstrap';
-import React from "react";
+import * as React from "react";
+// import NavTabs from "./navtabs";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
+import Photo from "./assets/avatar.png";
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
@@ -11,7 +15,10 @@ function NavTabs({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange("Home")}
             className={currentPage === "Home" ? "nav-link active" : "nav-link"}
           >
-            Mackenzie Saideman
+            <Stack direction="row" spacing={2}>
+            <Avatar id="avatar" src={Photo} alt="Mackenzie Saideman" sx={{ width: 56, height: 56 }} /> 
+          </Stack>
+         
           </a>
         </li>
         <li className="nav-item">
