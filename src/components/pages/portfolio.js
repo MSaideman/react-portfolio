@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Portfolio() {
     return (
         <Box sx={{bgcolor: 'white', color: '#2b2d42', paddingBottom:'100px', paddingLeft:'10px'}}>
-            <h2 className="text-center border-bottom pb-2">Portfolio</h2>
+            <h2 className="text-center border-bottom pb-3">Portfolio</h2>
             <Project />
         </Box>
 

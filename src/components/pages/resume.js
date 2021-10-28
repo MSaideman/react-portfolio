@@ -20,7 +20,7 @@ export default function Resume() {
             Download Here
           </Link>
           <div>
-            <img alt="resume" src={ResumePic}/>
+            <img style={{marginLeft:'270px'}}alt="resume" src={ResumePic}/>
           </div>
         </div>
       </Container>

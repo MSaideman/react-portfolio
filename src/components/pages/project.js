@@ -34,7 +34,7 @@ export default function Project() {
             API that stores users and events.
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions sx={{display:"flex", justifyContent:"center"}}>
           <Link
             href="https://github.com/MSaideman/Event-Listener-App"
             underline="none"
@@ -67,7 +67,7 @@ export default function Project() {
             articles, blog posts, and thoughts and opinions.
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions sx={{display:"flex", justifyContent:"center"}}>
           <Link
             href="https://github.com/MSaideman/CMS-Tech-Blog"
             underline="none"
@@ -99,7 +99,7 @@ export default function Project() {
           The user will be able to add expenses and deposits to their budget with or without a connection.
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions sx={{display:"flex", justifyContent:"center"}}>
           <Link
             href="https://github.com/MSaideman/budget-tracker"
             underline="none"
@@ -131,7 +131,7 @@ export default function Project() {
           An app to help a consumer reach their fitness goals more quickly by tracking their workout progress.
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions sx={{display:"flex", justifyContent:"center"}}>
           <Link
             href="https://github.com/MSaideman/My-Workout-Tracker"
             underline="none"
@@ -163,7 +163,7 @@ export default function Project() {
           An app to help a consumer choose what type of animal they want and the zip code they are looking for to find their perfect fit.
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions sx={{display:"flex", justifyContent:"center"}}>
           <Link
             href="https://github.com/MSaideman/find-your-forever-friend"
             underline="none"
@@ -195,7 +195,7 @@ export default function Project() {
           An app to see the weather outlook for multiple cities.
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions sx={{display:"flex", justifyContent:"center"}}>
           <Link
             href="https://github.com/MSaideman/weather-dashboard"
             underline="none"
