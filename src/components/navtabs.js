@@ -1,14 +1,10 @@
 // import { Navbar, Container, Nav } from 'react-bootstrap';
 import * as React from "react";
-// import NavTabs from "./navtabs";
-import Avatar from "@mui/material/Avatar";
-import Stack from "@mui/material/Stack";
-import Photo from "./assets/avatar.png";
 import Box from '@mui/material/Box';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <Box sx={{bgcolor: '#5c677d'}}>
+    <Box sx={{bgcolor: '#5c677d', paddingBottom:'50px'}}>
     <div>
       <ul className="nav nav-pills">
         <li className="nav-item">
@@ -16,10 +12,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             href="#home"
             onClick={() => handlePageChange("Home")}
             className={currentPage === "Home" ? "nav-link active" : "nav-link"}
-          >
-            <Stack direction="row" spacing={2}>
-            <Avatar id="avatar" src={Photo} alt="Mackenzie Saideman" sx={{ width: 56, height: 56 }} /> 
-          </Stack>
+          >Home
          
           </a>
         </li>

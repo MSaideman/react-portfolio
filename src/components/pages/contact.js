@@ -42,7 +42,7 @@ function Contact() {
 
   return (
     <React.Fragment>
-      <Box sx={{bgcolor: '#5c677d', color: '#001233'}}>
+      <Box sx={{bgcolor: '#5c677d', color: '#001233', paddingBottom:'100px'}}>
       <Container fixed>
         <h2 data-testid="h1tag" className="top-title">
           Contact Form

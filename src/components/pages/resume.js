@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 export default function Resume() {
   return (
     <React.Fragment>
-      <Box sx={{bgcolor: '#5c677d'}}>
+      <Box sx={{bgcolor: '#5c677d', paddingBottom:'100px'}}>
       <Container fixed>
         <div>
           <Link
