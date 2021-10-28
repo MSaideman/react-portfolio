@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 export default function Resume() {
   return (
     <React.Fragment>
-      <Box sx={{bgcolor: '#5c677d', paddingBottom:'100px'}}>
+      <Box sx={{bgcolor: 'white', paddingBottom:'100px', color:"#2b2d42"}}>
       <Container fixed>
         <div>
           <Link
@@ -15,7 +15,7 @@ export default function Resume() {
             underline="none"
             color="#001845"
             display="flex"
-            justifyContent="left"
+            justifyContent="center"
           >
             Download Here
           </Link>

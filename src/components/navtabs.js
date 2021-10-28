@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <Box sx={{bgcolor: '#5c677d', paddingBottom:'50px'}}>
+    <Box sx={{bgcolor: 'white', paddingBottom:'50px', color:'#2b2d42'}}>
     <div>
       <ul className="nav nav-pills">
         <li className="nav-item">
