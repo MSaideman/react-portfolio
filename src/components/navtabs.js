@@ -4,9 +4,11 @@ import * as React from "react";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Photo from "./assets/avatar.png";
+import Box from '@mui/material/Box';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
+    <Box sx={{bgcolor: '#5c677d'}}>
     <div>
       <ul className="nav nav-pills">
         <li className="nav-item">
@@ -65,6 +67,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
       </ul>
     </div>
+    </Box>
   );
 }
 

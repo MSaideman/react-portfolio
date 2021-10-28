@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 import Container from "@mui/material/Container";
+import Box from '@mui/material/Box';
 
 function Contact() {
   const [formState, setFormState] = useState({
@@ -41,6 +42,7 @@ function Contact() {
 
   return (
     <React.Fragment>
+      <Box sx={{bgcolor: '#5c677d', color: '#001233'}}>
       <Container fixed>
         <h2 data-testid="h1tag" className="top-title">
           Contact Form
@@ -95,6 +97,7 @@ function Contact() {
           </div>
         </form>
       </Container>
+      </Box>
     </React.Fragment>
   );
 }

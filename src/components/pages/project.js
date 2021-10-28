@@ -11,11 +11,14 @@ import BudgetTracker from "../assets/budgettracker.png"
 import WorkoutTracker from "../assets/workouttracker.png"
 import PetFinder from "../assets/petfinder.png"
 import Weather from "../assets/weather.png"
+import Grid from '@mui/material/Grid';
 
 export default function Project() {
   return (
     <React.Fragment>
-      <Card sx={{ maxWidth: 345 }}>
+      <Grid container spacing={3} style={{marginLeft: 20}}>
+      <Grid item xs={4}>
+      <Card sx={{ maxWidth: 345, maxHeight:310 }}>
         <CardMedia
           component="img"
           height="140"
@@ -46,7 +49,9 @@ export default function Project() {
           </Link>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 345 }}>
+      </Grid>
+      <Grid item xs={4}>
+      <Card sx={{ maxWidth: 345, maxHeight:310  }}>
         <CardMedia
           component="img"
           height="140"
@@ -77,7 +82,9 @@ export default function Project() {
           </Link>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 345 }}>
+      </Grid>
+      <Grid item xs={4}>
+      <Card sx={{ maxWidth: 345, maxHeight:310  }}>
         <CardMedia
           component="img"
           height="140"
@@ -89,7 +96,7 @@ export default function Project() {
             Budget Tracker
           </Typography>
           <Typography variant="body2" color="text.secondary">
-          The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+          The user will be able to add expenses and deposits to their budget with or without a connection.
           </Typography>
         </CardContent>
         <CardActions>
@@ -107,7 +114,9 @@ export default function Project() {
           </Link>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 345 }}>
+      </Grid>
+      <Grid item xs={4}>
+      <Card sx={{ maxWidth: 345, maxHeight:310  }}>
         <CardMedia
           component="img"
           height="140"
@@ -137,7 +146,9 @@ export default function Project() {
           </Link>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 345 }}>
+      </Grid>
+      <Grid item xs={4}>
+      <Card sx={{ maxWidth: 345, maxHeight:310  }}>
         <CardMedia
           component="img"
           height="140"
@@ -167,7 +178,9 @@ export default function Project() {
           </Link>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 345 }}>
+      </Grid>
+      <Grid item xs={4}>
+      <Card sx={{ maxWidth: 345, maxHeight:310  }}>
         <CardMedia
           component="img"
           height="140"
@@ -197,6 +210,8 @@ export default function Project() {
           </Link>
         </CardActions>
       </Card>
+      </Grid>
+      </Grid>
     </React.Fragment>
   );
 }
