@@ -8,7 +8,7 @@ import Stack from "@mui/material/Stack";
 export default function About() {
   return (
     <React.Fragment>
-      <Box sx={{ bgcolor: "#white", color: '#001233', paddingBottom:'300px', marginLeft:"200px", marginRight:"200px"}}>
+      <Box sx={{ bgcolor: "#white", color: '#001233', paddingBottom:'300px', marginLeft:"200px", marginRight:"200px", fontFamily:"geneva", paddingTop:".5rem"}}>
         <Container fixed>
           <h2 className="top-title">About Me</h2>
           <hr></hr>

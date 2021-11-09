@@ -4,10 +4,11 @@ import Box from '@mui/material/Box';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <Box sx={{bgcolor: 'white', paddingBottom:'50px', color:'#2b2d42'}}>
+    <Box sx={{bgcolor: 'white', paddingBottom:'.5rem', color:'#2b2d42'}}>
+      <nav className="navbar navbar-expand-lg  navbar-dark ">
     <div>
-      <ul className="nav nav-pills">
-        <li className="nav-item">
+      <ul className="nav green">
+        <li className="nav-item" class="active">
           <a
             href="#home"
             onClick={() => handlePageChange("Home")}
@@ -16,7 +17,7 @@ function NavTabs({ currentPage, handlePageChange }) {
          
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" class="active">
           <a
             href="#about"
             onClick={() => handlePageChange("About")}
@@ -25,7 +26,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             About me
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" class="active">
           <a
             href="#portfolio"
             onClick={() => handlePageChange("Portfolio")}
@@ -36,7 +37,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             Portfolio
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" class="active">
           <a
             href="#contact"
             onClick={() => handlePageChange("Contact")}
@@ -47,7 +48,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             Contact
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" class="active">
           <a
             href="#resume"
             onClick={() => handlePageChange("Resume")}
@@ -60,6 +61,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
       </ul>
     </div>
+    </nav>
     </Box>
   );
 }

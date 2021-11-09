@@ -5,3 +5,27 @@ footer {
   text-align: center;
   margin-bottom: 0.5rem;
 }
+
+.green .active a,
+.green .active a:hover {
+  background-color: #1b4332;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.green .active a,
+.green .active a:link {
+  background-color: white;
+  color: #5e5e5e;
+}
+
+.green .active a,
+.green .active a:active {
+  background-color: white;
+  color: #5e5e5e;
+}
+
+.resume {
+  color: white;
+  text-decoration: none;
+}

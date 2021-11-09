@@ -16,7 +16,7 @@ import Grid from '@mui/material/Grid';
 export default function Project() {
   return (
     <React.Fragment>
-      <Grid container spacing={3} style={{marginLeft: 20}}>
+      <Grid container spacing={3} style={{marginLeft: 20, fontFamily:"geneva"}}>
       <Grid item xs={4}>
       <Card sx={{ maxWidth: 345, maxHeight:310 }}>
         <CardMedia
