@@ -18,13 +18,12 @@ A simple Portfolio built with React to showcase my work, and other information a
 
 Run the command `npx create-react-app app-name`
 Run the command `npm i' to add the following dependencies.
-
-- NPM: axios, bootstrap, dotenv, gh-pages, react, react-bootstrap, react-dom, react-scripts
-  Run npm start.
+NPM: axios, bootstrap, dotenv, gh-pages, react, react-bootstrap, react-dom, react-scripts
+Run npm start.
 
 ## Usage
 
-I want to share my latest projects and skills using React.  
+I want to share my latest projects and skills using React.
 
 ## License
 
