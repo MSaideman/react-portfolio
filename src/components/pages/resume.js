@@ -1,5 +1,5 @@
 import * as React from "react";
-import ResumePic from "../assets/MackenzieSaideman2021_PM_11.pdf";
+import ResumePic from "../assets/MackenzieSaideman2021_NEW.pdf";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 
