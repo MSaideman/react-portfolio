@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.b3700b4f.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.99394d5e.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.99394d5e.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.0c21e53c.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.0c21e53c.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.7530632e.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7530632e.js.map",
     "static/css/2.0a9ec390.chunk.css": "/react-portfolio/static/css/2.0a9ec390.chunk.css",
@@ -21,6 +21,8 @@
     "static/media/photo2.97833c33.png": "/react-portfolio/static/media/photo2.97833c33.png",
     "static/media/photo3.af7420c3.png": "/react-portfolio/static/media/photo3.af7420c3.png",
     "static/media/tech blog.8a6a9a06.png": "/react-portfolio/static/media/tech blog.8a6a9a06.png",
+    "static/media/transcript.04a6d6ef.pdf": "/react-portfolio/static/media/transcript.04a6d6ef.pdf",
+    "static/media/transcript2.d4f5302c.pdf": "/react-portfolio/static/media/transcript2.d4f5302c.pdf",
     "static/media/weather.b0e6ab9a.png": "/react-portfolio/static/media/weather.b0e6ab9a.png",
     "static/media/workouttracker.bfef548b.png": "/react-portfolio/static/media/workouttracker.bfef548b.png"
   },
@@ -29,6 +31,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.6bc6dc78.chunk.js",
     "static/css/main.b3700b4f.chunk.css",
-    "static/js/main.99394d5e.chunk.js"
+    "static/js/main.0c21e53c.chunk.js"
   ]
 }
